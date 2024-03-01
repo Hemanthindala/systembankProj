@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'accounts',
     'profiles',
     'admins',
-    'corsheaders'
+    'corsheaders',
+    'CentralBank',
+    'templates',
+    'templates',
+    'static',
+    'media'
 ]
 
 MIDDLEWARE = [
