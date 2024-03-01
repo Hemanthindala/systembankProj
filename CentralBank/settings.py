@@ -41,10 +41,6 @@ INSTALLED_APPS = [
     'admins',
     'corsheaders',
     'CentralBank',
-    'templates',
-    'templates',
-    'static',
-    'media'
 ]
 
 MIDDLEWARE = [
