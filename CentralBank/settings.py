@@ -122,6 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
@@ -138,5 +139,7 @@ ALLOWED_HOSTS = ['localhost', '0.0.0.0', '156.56.103.233']
 
 CORS_ALLOWED_ORIGINS = [
     "156.56.103.233",
+    "http://156.56.103.233",
+    "https://156.56.103.233",
 ]
 
