@@ -126,7 +126,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-STATIC_ROOT = '/Users/hemanthindala/PycharmProjects/systembankproject/systembankProj/static'
+STATIC_ROOT = '/home/hemanth/Documents/bankproj/systembankProj/static'
 
 
 MEDIA_URL = "/media/"
