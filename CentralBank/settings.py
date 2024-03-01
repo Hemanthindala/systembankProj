@@ -25,7 +25,6 @@ SECRET_KEY = '=i%twuy^exs!y!9(y7jf5t9h1)s8e6)$&kw!r8^z8h$5st(hkq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,10 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'profiles',
-    'admins'
+    'admins',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -129,4 +130,10 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '156.56.103.233']
+
+CORS_ALLOWED_ORIGINS = [
+    "156.56.103.233",
+]
 
